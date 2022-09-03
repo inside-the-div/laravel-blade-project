@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 class HomePageController extends Controller
 {
     public function homePage() {
-        return view('index');
+        $pageTitle = "";
+        $page_class = "";
+        return view('index',compact('pageTitle', 'page_class'));
     }
 }

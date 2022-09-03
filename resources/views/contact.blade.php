@@ -1,12 +1,5 @@
 @extends('layout')
 
-@section('page_title')
- - Contact
-@endsection
-
-@section('individual_class')
-contact_page
-@endsection
 
 @section('content')
 <div class="blue_bg">

@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 class ProjectPageController extends Controller
 {
     public function projectPage() {
-        return view('project');
+        $pageTitle = " - Project";
+        $page_class = "project_page";
+        return view('project',compact('pageTitle', 'page_class'));
     }
 }

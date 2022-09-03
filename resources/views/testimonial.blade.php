@@ -1,13 +1,5 @@
 @extends('layout')
 
-@section('page_title')
- - Testimonial
-@endsection
-
-@section('individual_class')
-testimonial_page
-@endsection
-
 
 @section('content')
 <div class="blue_bg">

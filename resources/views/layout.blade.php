@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>eoc @yield('page_title')</title>
+      <title>eoc {{$pageTitle}}</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -19,7 +19,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
       <!-- fevicon -->
-      <link rel="icon" href="{asset('images/fevicon.png')}}" type="image/gif" />
+      <link rel="icon" href="{{asset('images/fevicon.png')}}" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="{{asset('css/jquery.mCustomScrollbar.min.css')}}">
       <!-- Tweaks for older IEs-->
@@ -30,7 +30,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class='main-layout @yield("individual_class")'>
+   <body class='main-layout {{$page_class}}'>
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="{{asset('images/loading.gif')}}" alt="#" /></div>
@@ -45,7 +45,7 @@
                   <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
                      <div class="full">
                         <div class="logo">
-                           <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                           <a href="{{ route('HomePage')}}"><img src="{{ asset('images/logo.png')}}" alt="#" /></a>
                         </div>
                      </div>
                   </div>
@@ -101,18 +101,18 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-5">
-                     <a class="logo2" href="index.html"><img src="images/logo2.png" alt="#"/></a>
+                     <a class="logo2" href="{{ route('HomePage')}}"><img src="images/logo2.png" alt="#"/></a>
                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it  </p>
                   </div>
                   <div class="col-md-3">
                      <div class="fid_box">
                         <h3>Useful Link </h3>
                         <ul class="use_link">
-                           <li class="active"><a  href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="project.html">Our Project</a></li>
-                           <li><a href="testimonial.html">Testimonial</a></li>
-                           <li><a href="contact.html">Contact Us</a></li>
+                           <li class="active"><a  href="{{ route('HomePage')}}">Home</a></li>
+                           <li><a href="{{ route('AboutPage')}}">About</a></li>
+                           <li><a href="{{ route('ProjectPage')}}">Our Project</a></li>
+                           <li><a href="{{ route('TestimonialPage')}}">Testimonial</a></li>
+                           <li><a href="{{ route('ContactPage')}}">Contact Us</a></li>
                         </ul>
                      </div>
                   </div>

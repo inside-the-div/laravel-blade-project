@@ -1,12 +1,5 @@
 @extends('layout')
 
-@section('page_title')
- - About
-@endsection
-
-@section('individual_class')
-about_page
-@endsection
 
 @section('content')
       <div class="blue_bg">

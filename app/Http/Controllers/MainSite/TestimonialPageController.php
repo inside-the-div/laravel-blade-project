@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 class TestimonialPageController extends Controller
 {
     public function testimonialPage() {
-        return view('testimonial');
+
+        $pageTitle = " - Testimonial";
+        $page_class = "testimonial_page";
+        return view('testimonial',compact('pageTitle', 'page_class'));
     }
 }

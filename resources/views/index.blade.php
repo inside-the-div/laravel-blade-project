@@ -33,7 +33,7 @@
                         <div class="row">
                            <div class="col-md-7">
                               <div class="text-bg">
-                                 <h1> <span class="yellow"> Electrical </span> <br>Contractor</h1>
+                                 <h1> <span class="yellow">  Electrical </span> <br>Contractor</h1>
                                  <p>It is a long established fact that a reader will be distracted by the readablecontent of a page when looking at its layout. The point of using Lorem </p>
                                  <a class="read_more" href="#">Contact</a><a class="read_more" href="#">About Us</a>
                               </div>
