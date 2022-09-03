@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\MainSite\HomePageController;
+use App\Http\Controllers\MainSite\AboutPageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [HomePageController::class, 'homePage'])->name('HomePage');
+Route::get('/about', [AboutPageController::class, 'aboutPage'])->name('AboutPage');
+
+
+// Route::get('/', function () {
+//     return view('index');
+// });
