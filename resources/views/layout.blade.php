@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>eoc</title>
+      <title>eoc @yield('page_title')</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -30,7 +30,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout">
+   <body class='main-layout @yield("individual_class")'>
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="{{asset('images/loading.gif')}}" alt="#" /></div>
@@ -57,19 +57,19 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Home</a>
+                                 <a class="nav-link" href="{{ route('HomePage')}}">Home</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
+                                 <a class="nav-link" href="{{ route('AboutPage')}}">About</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="project.html">Our Project</a>
+                                 <a class="nav-link" href="{{ route('ProjectPage')}}">Our Project</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="testimonial.html">Testimonial</a>
+                                 <a class="nav-link" href="{{ route('TestimonialPage')}}">Testimonial</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="{{ route('ContactPage')}}">Contact Us</a>
                               </li>
                            </ul>
                         </div>
